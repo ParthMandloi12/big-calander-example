@@ -3,6 +3,31 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-.rbc-allday-cell{
+
+.rbc-allday-cell {
   display: none !important;
+}
+
+.rbc-day-slot .rbc-events-container {
+  margin-right: 0% !important;
+}
+
+.rbc-time-slot {
+  display: flex;
+  align-items: center;
+}
+
+.rbc-header {
+  border-bottom: none !important;
+}
+
+.rbc-time-header-content>.rbc-row.rbc-row-resource {
+  border-bottom: none !important;
+  min-height: 100% !important;
+  display: flex;
+  align-items: center;
+}
+
+.rbc-time-header {
+  height: 30px;
 }

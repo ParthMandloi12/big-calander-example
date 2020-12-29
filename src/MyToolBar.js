@@ -9,17 +9,41 @@ export default class MyToolBar extends Toolbar {
     return (
       <div>
         <div className="rbc-btn-group">
-          <button
-            type="button"
-            onClick={() => this.props.handleChangedate()}
-          >
-            sahil
+          <button type="button" onClick={() => this.props.handleChangedate()}>
+            NewDate
           </button>
           <button type="button" onClick={() => this.props.prevDate()}>
             back
           </button>
-          <button type="button" onClick={() => this.navigate("NEXT")}>
-            next
+          <button
+            type="button"
+            onClick={() => this.props.nextDay(new Date(2020, 11, 30))}
+          >
+            30 Dec
+          </button>
+          <button
+            type="button"
+            onClick={() => this.props.nextDay(new Date(2020, 11, 31))}
+          >
+            31 Dec
+          </button>
+          <button
+            type="button"
+            onClick={() => this.props.nextDay(new Date(2021, 0, 1))}
+          >
+            1 Jan
+          </button>
+          <button
+            type="button"
+            onClick={() => this.props.nextDay(new Date(2021, 0, 2))}
+          >
+            2 Jan
+          </button>
+          <button
+            type="button"
+            onClick={() => this.props.nextDay(new Date(2021, 0, 3))}
+          >
+            3 Jan
           </button>
           <button type="button" onClick={() => this.props.timesheetDate()}>
             ne
