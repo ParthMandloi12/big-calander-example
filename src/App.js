@@ -5,7 +5,6 @@ import MyToolBar from "./MyToolBar";
 import "./App.css";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
-moment.locale('en-GB')
 const localizer = momentLocalizer(moment);
 const resources = [
   {
